@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/contactos.css">
+	<link rel="icon" href="icono/icono.png">
+	<title>Contactos | La Farola</title>
+</head>
+<body>
+	<img src="img/lugar.jpg" class="fondo">
+	<br><br>
+	<nav class="menuNav">
+		<ul>
+			<li><a href="index.html" class="logo"><img src="img/logo4.png" width="130" height="50"></a></li>
+			<li><a href="reserva.html" class="menu">RESERVA</a></li>
+			<li><a href="historia.html" class="menu">HISTORIA</a></li>
+			<li><a href="nosotros.html" class="menu">NOSOTROS</a></li>
+			<li><a href="contactos.html" class="menu seleccion">CONTACTO</a></li>
+			<li><a href="platos.html" class="menu">PLATOS</a></li>
+			<li><a href="index.html" class="menu">INICIO</a></li>
+		</ul>
+	</nav>
+
+	<section class="banner">
+		<div class="contacto">
+			<h1>DEJANOS TU MENSAJE</h1>
+		</div>	
+	</section>
+
+	<div class="tituloC">
+			<h1>Contáctenos</h1>
+	</div><br><br>
+
+	<form action="enviar.php" method="POST">
+		Nombres <br><input type="text" class="texto" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+		Apellidos <br><input type="text" class="texto" name="apellidos" placeholder="Ingrese sus apellidos" required><br><br>
+		Telefono <br><input type="text" class="texto" name="telefono" placeholder="Ingrese su telefono" required><br><br>
+		Correo <br><input type="email" class="texto" name="correo" placeholder="ejemplo@gmail.com" required><br><br>
+		<label>Mensaje</label><br>
+		<textarea name="descripcion" class="texto" rows="8" required>
+		</textarea><br><br>
+		<input type="submit" class="boton" onclick="alerta()" value="Enviar">
+	</form><br><br><br>
+
+	<section class="info">
+		<h2>Informacion del Contacto</h2>
+		<p>Ubicacion: Puerto Eten Calle Diego Ferré #213 Eten Puerto, Perú</p>
+		<p>Celular: 969 505 480</p>
+		<a href="https://www.facebook.com/Restaurant-La-Farola-Puerto-Eten-180645305924331/?ref=page_internal">
+			<img src="icono/facebook.png">
+		</a>
+		<img src="icono/instagram.png">
+		<img src="icono/whatsapp.png">
+	</section><br><br>
+	<section class="horario">
+		<h2>Horario de Atención</h2>
+		<p>Lunes a Viernes: 6:00am a 10:00pm</p>
+		<p>Sabados y Domingos: 6:00am a 8:00pm</p>
+	</section><br>
+
+	<script>
+		function alerta(){
+			alert("Su mensaje se ha enviado con exito");
+		}
+	</script>
+
+	<div class="mapa">
+		<h2>Nuestra ubicación</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6933424722206!2d-79.87019978602817!3d-6.9272109949949465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce31b800c3489%3A0xa2b21e7f211063db!2sLa%20Farola!5e0!3m2!1ses!2spe!4v1603754590049!5m2!1ses!2spe" width="75%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div><br><br><br><br>
+
+	<footer>
+        <div class="derechos">
+            <p> 2020 © Todos los Derechos Reservados</p>
+        </div>
+    
+
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.facebook.com/Restaurant-La-Farola-Puerto-Eten-180645305924331/?ref=page_internal">
+                    <img src="icono/facebook.png">
+                </a></li>
+
+                <li><a href="#">
+                    <img src="icono/instagram.png">
+                </a></li>
+                <li><a href="#">
+                    <img src="icono/whatsapp.png">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
